@@ -17,7 +17,7 @@ def remove_file(dir):
 
 if __name__ == "__main__":
 
-    print(INFO + "Cleaning-up template..." + TERMINATOR)
+    print (INFO + "Creating template for {{cookiecutter.tkinter_project_type|lower}}..." + TERMINATOR)
 
     #Remove README
     if '{{cookiecutter.create_README_file}}' != 'y':
@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     chosenTemplate =  '{{cookiecutter.tkinter_project_type|lower}}'
 
-    deleteTemplates = templates.remove(chosenTemplate)
+    deleteTemplates = [n for n in templates if n != chosenTemplate]
 
     for template in deleteTemplates:
         remove_file(template)
