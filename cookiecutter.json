@@ -7,7 +7,7 @@
     "project_short_description": "Python Tkinter Boilerplate contains all the boilerplate you need to create a dofferent Tkinter PRojects.",
     "version": "0.1.0",
     "use_pytest": "n",
-    "tkinter_project_type": ["Basic Form ","Multipage Form with sample components" , "Calculator" , "Database" , "Password Generator" , "Currency convertor"],
+    "tkinter_project_type": ["basic_form ","multipage_form_with_sample_components" , "calculator" , "database" , "password_generator" , "currency_convertor"],
     "use_material_design": "y",
     "primary_colour":["Purple" , "Green" , "Yellow" ,"Blue" ,"Orange"],
     "create_README_file": "y",

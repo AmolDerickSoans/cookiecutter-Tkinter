@@ -9,8 +9,8 @@ INFO = "\x1b[1;33m [INFO]: "
 HINT = "\x1b[3;33m"
 SUCCESS = "\x1b[1;32m [SUCCESS]: "
 
-def remove_file(filepath):
-    os.remove(os.path.join(PROJECT_DIRECTORY,filepath))
+def remove_file(dir):
+    os.remove(os.path.join(PROJECT_DIRECTORY,dir))
 
 
 if __name__ == "__main__":
@@ -22,23 +22,24 @@ if __name__ == "__main__":
         remove_file('README.md')
 
     # Remove other templates
-    if 'Basic_Form' in '{{ cookiecutter.tkinter_project_type|lower }}':
-        remove_file("Multipage_Form_with_sample_components.py" )
-        remove_file()
-        remove_file()
-        remove_file()
-        remove_file()
-        remove_file()
-    
-    if 'Multipage_Form_with_sample_components' in '{{ cookiecutter.tkinter_project_type|lower }}':
-        remove_file("Multipage_Form_with_sample_components.py" )
-        remove_file()
-        remove_file()
-        remove_file()
-        remove_file()
-        remove_file()
-    
+    if 'basic_form' in '{{ cookiecutter.tkinter_project_type|lower }}':
+        remove_file("multipage_form_with_sample_components" )
+        remove_file("calculator")
+        remove_file("database")
+        remove_file("currency")
 
+    if 'calculator' in '{{ cookiecutter.tkinter_project_type|lower }}':
+        remove_file("multipage_form_with_sample_components" )
+        remove_file("basic_form")
+        remove_file("database")
+        remove_file("currency")
+    
+    if 'currency' in '{{ cookiecutter.tkinter_project_type|lower }}':
+        remove_file("multipage_form_with_sample_components" )
+        remove_file("basic_form")
+        remove_file("database")
+        remove_file("calculator")
+            
         
 
     #Material Design
