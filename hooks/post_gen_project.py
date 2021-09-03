@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import shutil
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 TERMINATOR = "\x1b[0m"
@@ -10,7 +11,8 @@ HINT = "\x1b[3;33m"
 SUCCESS = "\x1b[1;32m [SUCCESS]: "
 
 def remove_file(dir):
-    os.remove(os.path.join(PROJECT_DIRECTORY,dir))
+    path = os.path.join(PROJECT_DIRECTORY,dir)
+    shutil.rmtree(path)
 
 
 if __name__ == "__main__":
