@@ -4,7 +4,7 @@
     "github_username": "AmolSoans",
     "project_name": "Tkinter Basic Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_short_description": "Python Tkinter Boilerplate contains all the boilerplate you need to create a dofferent Tkinter PRojects.",
+    "project_short_description": "Python Tkinter Boilerplate contains all the boilerplate you need to create a dofferent Tkinter Projects.",
     "version": "0.1.0",
     "use_pytest": "n",
     "tkinter_project_type": ["basic_form ","multipage_form_with_sample_components" , "calculator" , "database" , "password_generator" , "currency_convertor"],

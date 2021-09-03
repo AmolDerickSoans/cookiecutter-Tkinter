@@ -18,7 +18,7 @@ if __name__ == "__main__":
     print(INFO + "Cleaning-up template..." + TERMINATOR)
 
     #Remove README
-    if '{{cookie.cutter.create_author_file}}' != 'y':
+    if '{{cookiecutter.create_author_file}}' != 'y':
         remove_file('README.md')
 
     # Remove other templates
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         
 
     #Material Design
-    if '{{cookie.cutter.use_material_design}}' != 'y':
+    if '{{cookiecutter.use_material_design}}' != 'y':
         remove_file('static')
 
 
