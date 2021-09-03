@@ -23,7 +23,17 @@ if __name__ == "__main__":
     if '{{cookiecutter.create_README_file}}' != 'y':
         remove_file('README.md')
 
-    # Remove other templates
+    templates = ["basic_form ","multipage_form_with_sample_components","text_editor" , "calculator" , "database" , "password_generator" , "currency_convertor"]
+
+    chosenTemplate =  '{{coockiecutter.tkinter_project_type|lower}}'
+
+    deleteTemplates = templates.remove(chosenTemplate)
+
+    for template in deleteTemplates:
+        remove_file(template)
+
+    """     # Remove other templates
+    
     if 'basic_form' in '{{ cookiecutter.tkinter_project_type|lower }}':
         remove_file("multipage_form_with_sample_components" )
         remove_file("calculator")
@@ -41,6 +51,9 @@ if __name__ == "__main__":
         remove_file("basic_form")
         remove_file("database")
         remove_file("calculator")
+
+     """
+
             
         
 
