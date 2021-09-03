@@ -2,14 +2,16 @@
     "full_name": "Amol Derick Soans",
     "email": "Derick@example.com",
     "github_username": "AmolSoans",
-    "project_name": "Tkinter Basic Boilerplate",
+
+    "project_name": "Tkinter Templates",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_short_description": "Python Tkinter Boilerplate contains all the boilerplate you need to create a dofferent Tkinter Projects.",
+    "project_short_description": "Enter a Short description of your project",
     "version": "0.1.0",
     "use_pytest": "n",
-    "tkinter_project_type": ["basic_form ","multipage_form_with_sample_components","text_editor" , "calculator" , "database" , "password_generator" , "currency_convertor"],
-    "use_material_design": "y",
+    "tkinter_project_type": ["basic_form","multipage_form_with_sample_components","text_editor","file_search" , "calculator" , "database" , "currency_convertor"],
+    "ttkTheme": ["arc ","plastik" , "adapta" , "yaru" , "radiance" , "breeze" ,"no-theme"],
+    "use_material_design": "y (only if ttk theme not selected) ",
     "primary_colour":["Purple" , "Green" , "Yellow" ,"Blue" ,"Orange"],
     "create_README_file": "y",
     "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
-  }
+}
