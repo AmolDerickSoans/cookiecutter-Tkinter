@@ -1,0 +1,22 @@
+dev{
+    MILESTONE 1:
+ take 3 programs and output one that is chosen
+
+MILESTONE 2:
+ add 2 versions of the programs i.e with and without material design
+ add colours and background
+
+MILESTONE 3:
+ add tests for baking cookies
+}
+
+
+prod
+{
+
+MILESTONE 4:
+ add more templates 
+
+}
+
+
