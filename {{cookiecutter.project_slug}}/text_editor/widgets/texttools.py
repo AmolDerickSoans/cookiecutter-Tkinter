@@ -1,9 +1,3 @@
-"""
-    Find Text popup dialogues for finding, marking, and replacing text within text widget.
-
-    Author: Israel Dryer
-    Modified: 2020-06-08
-"""
 import tkinter as tk
 
 

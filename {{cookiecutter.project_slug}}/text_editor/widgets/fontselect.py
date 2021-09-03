@@ -1,9 +1,4 @@
-"""
-    Font Selector popup dialogue for text widget
 
-    Author: Israel Dryer
-    Modified: 2020-06-07
-"""
 import tkinter as tk
 from tkinter.ttk import Combobox
 from tkinter import font

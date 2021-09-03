@@ -1,9 +1,4 @@
-"""
-    AboutMe popup window to be used in notepad program
 
-    Author: Israel Dryer
-    Modified: 2020-06-07
-"""
 import tkinter as tk
 from tkinter.ttk import Separator
 import pathlib
