@@ -135,7 +135,7 @@ class Notepad(tk.Tk):
         """Open an existing file"""
         # check for content change before opening new file
         self.confirm_changes()
-
+        
         # open new file
         file = filedialog.askopenfilename(initialdir=self.file.parent, **self.file_defaults)
         if file:
