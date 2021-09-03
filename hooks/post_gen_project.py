@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     templates = ["basic_form ","multipage_form_with_sample_components","text_editor" , "calculator" , "database" , "password_generator" , "currency_convertor"]
 
-    chosenTemplate =  '{{coockiecutter.tkinter_project_type|lower}}'
+    chosenTemplate =  '{{cookiecutter.tkinter_project_type|lower}}'
 
     deleteTemplates = templates.remove(chosenTemplate)
 
