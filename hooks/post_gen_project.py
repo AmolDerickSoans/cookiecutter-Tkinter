@@ -10,56 +10,60 @@ INFO = "\x1b[1;33m [INFO]: "
 HINT = "\x1b[3;33m"
 SUCCESS = "\x1b[1;32m [SUCCESS]: "
 
-def remove_file(dir):
+def remove_file(filepath):
+    path = os.path.join(PROJECT_DIRECTORY,filepath)
+    os.remove(path)
+
+def remove_dir(dir):
     path = os.path.join(PROJECT_DIRECTORY,dir)
     shutil.rmtree(path)
 
 
 if __name__ == "__main__":
 
-    print (INFO + "Creating template for {{cookiecutter.tkinter_project_type|lower}}..." + TERMINATOR)
+    ## TO-DO: change to dictionary to make file names less cluttered
+    dictemp = { "basic form" : "basic_form" ,
+                "multipage form with sample components" : "multipage" ,
+              }
 
-    #Remove README
-    if '{{cookiecutter.create_README_file}}' != 'y':
-        remove_file('README.md')
 
-    templates = ["basic_form ","multipage_form_with_sample_components","text_editor" , "calculator" , "database" , "password_generator" , "currency_convertor"]
+    templates = ["basic_form","multipage_form_with_sample_components","text_editor" , "calculator" , "database" , "currency" , "file_search"]
 
     chosenTemplate =  '{{cookiecutter.tkinter_project_type|lower}}'
 
-    deleteTemplates = [n for n in templates if n != chosenTemplate]
+    print (INFO + "Creating template for {{cookiecutter.tkinter_project_type|lower}}..." + TERMINATOR)
 
-    for template in deleteTemplates:
-        remove_file(template)
+    #Remove README
 
-    """     # Remove other templates
-    
-    if 'basic_form' in '{{ cookiecutter.tkinter_project_type|lower }}':
-        remove_file("multipage_form_with_sample_components" )
-        remove_file("calculator")
-        remove_file("database")
-        remove_file("currency")
-
-    if 'calculator' in '{{ cookiecutter.tkinter_project_type|lower }}':
-        remove_file("multipage_form_with_sample_components" )
-        remove_file("basic_form")
-        remove_file("database")
-        remove_file("currency")
-    
-    if 'currency' in '{{ cookiecutter.tkinter_project_type|lower }}':
-        remove_file("multipage_form_with_sample_components" )
-        remove_file("basic_form")
-        remove_file("database")
-        remove_file("calculator")
-
-     """
-
-            
+    if '{{cookiecutter.create_README_file}}' != 'y':
+        remove_file('README.md')
         
+
+    
+
+    #Delete  templates
+
+    #making new array as removing templates from orignial means you cannot re-use cached cookiecutter 
+
+    deleteTemplates = templates
+    i = 0
+    
+    for template in deleteTemplates:
+        
+        if(template != chosenTemplate):
+            try:
+                remove_dir(deleteTemplates[i])
+                i += 1
+                
+            except FileNotFoundError:
+                print(WARNING + str(FileNotFoundError)+ TERMINATOR)
+                break
+        else:
+            i +=1
 
     #Material Design
     if '{{cookiecutter.use_material_design}}' != 'y':
-        remove_file('static')
+        remove_dir('static')
 
 
 # finally
