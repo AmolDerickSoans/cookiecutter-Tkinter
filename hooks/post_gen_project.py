@@ -18,7 +18,7 @@ if __name__ == "__main__":
     print(INFO + "Cleaning-up template..." + TERMINATOR)
 
     #Remove README
-    if '{{cookiecutter.create_author_file}}' != 'y':
+    if '{{cookiecutter.create_README_file}}' != 'y':
         remove_file('README.md')
 
     # Remove other templates
