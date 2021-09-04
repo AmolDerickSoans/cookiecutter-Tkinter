@@ -11,19 +11,19 @@ class Counter_program():
 
         self.radio_variable = tk.StringVar()
         self.combobox_value = tk.StringVar()
-
-    def create_widgets(self):
-
-
-
-        ##THEMES
-        # "arc  ","plastik" , "adapta" , "yaru" , "radiance" , "breeze" ,"no-theme"
+         ##THEMES
+# "arc  ","plastik" , "adapta" , "yaru" , "radiance" , "breeze" ,"no-theme"
         if '{{ cookiecutter.ttkTheme|lower}}' == 'no-theme':
             print("no theme file selected ,Set to default")
 
         else:
             style = ThemedStyle()
             style.theme_use('{{ cookiecutter.ttkTheme|lower}}')
+
+
+
+    def create_widgets(self):
+    
         # Create some room around all the internal frames
         self.window['padx'] = 5
         self.window['pady'] = 5
