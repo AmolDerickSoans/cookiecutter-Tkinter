@@ -43,7 +43,7 @@ class Counter_program():
         menu_label = ttk.Label(cmd_frame, text="Menu (see examples above)")
         menu_label.grid(row=3, column=1, columnspan=2, sticky=tk.W, pady=3)
 
-        my_button = ttk.Button(cmd_frame, text="do something")
+        my_button = tk.Button(cmd_frame, text="do something")
         my_button.grid(row=1, column=2)
 
         my_button = ttk.Button(cmd_frame, text="do something")
@@ -71,15 +71,15 @@ class Counter_program():
         my_entry.grid(row=1, column=2, sticky=tk.W, pady=3)
         my_entry.insert(tk.END, "Test")
 
-        my_text = ttk.Text(entry_frame, height=5, width=30)
+        my_text = tk.Text(entry_frame, height=5, width=30)
         my_text.grid(row=2, column=2)
         my_text.insert(tk.END, "An example of multi-line\ninput")
 
         my_spinbox = ttk.Spinbox(entry_frame, from_=0, to=10, width=5, justify=tk.RIGHT)
         my_spinbox.grid(row=3, column=2, sticky=tk.W, pady=3)
 
-        my_scale = ttk.Scale(entry_frame, from_=0, to=100, orient=tk.HORIZONTAL,
-                            width=8, length=200)
+        my_scale = tk.Scale(entry_frame, from_=0, to=100, orient=tk.HORIZONTAL,
+                            length=200)
         my_scale.grid(row=4, column=2, sticky=tk.W)
 
         my_scale = ttk.Scale(entry_frame, from_=0, to=100, orient=tk.HORIZONTAL,
@@ -130,7 +130,7 @@ class Counter_program():
         combobox_label = ttk.Label(fromlist_frame, text="ttk.Combobox")
         combobox_label.grid(row=2, column=1, sticky=tk.W + tk.N)
 
-        my_listbox = ttk.Listbox(fromlist_frame, height=4)
+        my_listbox = tk.Listbox(fromlist_frame, height=4)
         for item in ["one", "two", "three", "four"]:
             my_listbox.insert(tk.END, "Choice " + item)
         my_listbox.grid(row=1, column=2)
