@@ -22,11 +22,14 @@ CookiecutterTkinter offers multiple templates to build tkinter projects.
 
 # TEMPLATES AVAILABLE
 ## Basic single page form with multiple widgets
+![Startpage](https://user-images.githubusercontent.com/22007192/132120528-377cfc5b-28af-44a3-914d-0cca2816554b.PNG)
 ## Multipage form with widgets , notebooks.
+
 ## Single page with spalshscreen support
 ## Calculator Demo
 ## Text Editor Demo
 ## File Search Demo
+![tempsnip](https://user-images.githubusercontent.com/22007192/132120523-217e505d-9711-4392-8f1a-3f5eef661f59.png)
 
 #  ttk Themes
 
