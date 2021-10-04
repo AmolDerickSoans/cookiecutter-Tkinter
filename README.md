@@ -25,10 +25,12 @@ CookiecutterTkinter offers multiple templates to build tkinter projects.
 ![basic_form](https://user-images.githubusercontent.com/22007192/132120557-a3637978-e2b7-4f0d-a73e-8d0a6a2155cc.PNG)
 
 ## Multipage form with widgets , notebooks.
+![newww](https://user-images.githubusercontent.com/22007192/135901831-fee96540-d89e-4076-adc3-7d517339b33b.PNG)
 
 ## Single page with spalshscreen support
 ## Calculator Demo
 ## Text Editor Demo
+![note](https://user-images.githubusercontent.com/22007192/135902518-799d6f08-f6b6-48f2-aa84-3594f7e463d4.PNG)
 ## File Search Demo
 ![tempsnip](https://user-images.githubusercontent.com/22007192/132120523-217e505d-9711-4392-8f1a-3f5eef661f59.png)
 
